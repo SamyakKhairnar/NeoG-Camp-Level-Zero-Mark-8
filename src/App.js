@@ -90,7 +90,8 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Samyak's React App</h1>
+      <h1>Emoji Interpreter App</h1>
+      <h3><em>An React Applicaton</em></h3>
       <input onChange={userInputHandler}></input>
       <h2> {meaning} </h2>
       <h3>Some Emoji's We Know : </h3>
@@ -99,12 +100,37 @@ function App() {
           <span
             key={item}
             onClick={() => listItemClickHandler(item)}
-            style={{ display:'inline-block',width:"10rem",height:"3rem",padding: "2px", fontSize: "2rem", cursor: "pointer" }}
+            style={{ display:'inline-block',width:"8rem",height:"4rem",padding: "2px", fontSize: "2rem", cursor: "pointer" }}
           >
             {item}
           </span>
         );
       })}
+      <div className='footer'>
+        <p>Copyright &#169; 2022 All Rights Reserved</p>
+          <ul className="social-links list-non-bullet">
+            <li className="list-item-inline">
+              <a className="link" href="https://www.facebook.com/SamyakKhairnar">
+                <i className="fa-brands fb fa-facebook-f"></i>
+              </a>
+            </li>
+            <li className="list-item-inline">
+              <a className="link" href="https://twitter.com/SamyakKhairnar">
+                <i className="fa-brands tw fa-twitter"></i>
+              </a>
+            </li>
+            <li className="list-item-inline">
+              <a className="link" href="https://github.com/SamyakKhairnar">
+                <i className="fa-brands git fa-github"></i>
+              </a>
+            </li>
+            <li className="list-item-inline">
+              <a className="link" href="https://www.linkedin.com/in/samyakkhairnar/">
+                <i className="fa-brands in fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+      </div>
     </div>
   );
 }
