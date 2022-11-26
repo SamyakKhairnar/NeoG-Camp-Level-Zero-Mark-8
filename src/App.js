@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React,{ useState } from 'react';
 import './App.css';
 
 const emojiDictionary = {
@@ -91,10 +91,10 @@ function App() {
   return (
     <div className="App">
       <h1>Emoji Interpreter App</h1>
-      <h3><em>An React Applicaton</em></h3>
+      <h3>An React Applicaton</h3>
       <input onChange={userInputHandler}></input>
-      <h2> {meaning} </h2>
-      <h3>Some Emoji's We Know : </h3>
+      <h2 style={{fontSize:"2rem",color:"red"}}> {meaning} </h2>
+      <h2>Some Emoji's We Know : </h2>
       {list.map((item) => {
         return (
           <span
