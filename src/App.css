@@ -5,7 +5,7 @@
 
 body{
   background: rgb(34,193,195);
-  background: linear-gradient(306deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+  background: linear-gradient(160deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 120%);
 }
 
 h1{
@@ -29,11 +29,9 @@ input{
   left: 0;
   bottom: 0;
   width: 100%;
-  border: 2px solid gray;
-  /* margin-top: 12px;
-  padding: 0.2rem; */
+  border: 2px double black;
   background: rgb(34,193,195);
-  background: linear-gradient(130deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+  background: linear-gradient(310deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 120%);
 }
 
 .list-non-bullet {
@@ -52,4 +50,13 @@ input{
 }
 .link .fa-brands:hover {
   color: #ffffff;
+}
+
+@media only screen and (max-width: 600px){
+  
+  .footer{
+    position: relative;
+    background: linear-gradient(360deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 150%);
+    border: 1px solid black;
+  }
 }
