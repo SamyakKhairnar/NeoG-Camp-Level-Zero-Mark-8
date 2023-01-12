@@ -92,15 +92,14 @@ function App() {
     <div className="App">
       <h1>Emoji Interpreter App</h1>
       <h3>An React Applicaton</h3>
-      <input onChange={userInputHandler}></input>
-      <h2 style={{fontSize:"2rem",color:"red"}}> {meaning} </h2>
+      <input onChange={userInputHandler} placeholder='Input Emoji to Know Meaning'></input>
+      <h2 className='mean'> {meaning} </h2>
       <h2>Some Emoji's We Know : </h2>
       {list.map((item) => {
         return (
-          <span
+          <span className='emojis'
             key={item}
             onClick={() => listItemClickHandler(item)}
-            style={{ display:'inline-block',width:"8rem",height:"4rem",padding: "2px", fontSize: "2rem", cursor: "pointer" }}
           >
             {item}
           </span>

@@ -23,6 +23,18 @@ input{
   height: 3rem;
   width: 55%;
 }
+.mean{
+  font-size: 2rem;
+  color: red;
+}
+.emojis{
+  display: inline-block;
+  width: 8rem;
+  height: 4rem;
+  padding: 2px;
+  font-size: 2rem;
+  cursor: pointer;
+}
 
 .footer{
   position: fixed;
@@ -52,8 +64,21 @@ input{
   color: #ffffff;
 }
 
-@media only screen and (max-width: 600px){
-  
+@media only screen and (max-width: 650px){
+  input{
+    font-size: small;
+  }
+  h2{
+    font-size: larger;
+  }
+  .mean{
+    font-size: x-large;
+  }
+  .emojis{
+    display: inline;
+    margin: 2px;
+    font-size: xx-large;
+  }
   .footer{
     position: relative;
     background: linear-gradient(360deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 150%);
