@@ -65,6 +65,9 @@ input{
 }
 
 @media only screen and (max-width: 650px){
+  body{
+    background-image: linear-gradient(to right top, #00fbff, #04f9ff, #09f8ff, #0ef6ff, #13f4ff);
+  }
   input{
     font-size: small;
   }
@@ -80,8 +83,11 @@ input{
     font-size: xx-large;
   }
   .footer{
-    position: relative;
-    background: linear-gradient(360deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 150%);
-    border: 1px solid black;
+    width: 99%;
+    bottom: 0;
+    position: fixed;
+    /* background: rgba(255, 255, 255, .8); */
+    background: #00fbff;
+    border: 1px solid #00fbff;
   }
 }
